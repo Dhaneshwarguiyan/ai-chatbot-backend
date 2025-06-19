@@ -10,10 +10,15 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  provider: {
+  password: {
     type: String,
     required: true,
+    unique: true
   },
+  // provider: {
+  //   type: String,
+  //   required: true,
+  // },
 }, {
   timestamps: true,
 });

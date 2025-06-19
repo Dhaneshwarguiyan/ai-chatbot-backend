@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.json());
 
 app.use('/api/chat', chatRoutes); // Use chat routes for API requests
-app.use('/api/users', userRoutes); // Use user routes for API requests
+app.use('/api/user', userRoutes); // Use user routes for API requests
 app.get('/', (req, res) => {
     res.send('API is running...');
 });

@@ -18,7 +18,7 @@ app.use((0, cors_1.default)({
 }));
 app.use(express_1.default.json());
 app.use('/api/chat', chatRoute_1.default); // Use chat routes for API requests
-app.use('/api/users', userRoutes_1.default); // Use user routes for API requests
+app.use('/api/user', userRoutes_1.default); // Use user routes for API requests
 app.get('/', (req, res) => {
     res.send('API is running...');
 });
