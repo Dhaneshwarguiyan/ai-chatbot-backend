@@ -57,7 +57,7 @@ router.post('/signup', (req, res) => __awaiter(void 0, void 0, void 0, function*
         res.status(500).json({ error: 'Internal server error' });
     }
 }));
-router.post('/login', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+router.post('/signin', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { email, password } = req.body;
     try {
         // Find the user by email
